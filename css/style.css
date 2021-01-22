@@ -203,6 +203,7 @@ content p {
   border-radius: 50%;
   display: block;
   margin: 0 auto 20px;
+  padding-top: 15px;
 }
 
 /* footer */

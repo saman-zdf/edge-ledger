@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>our blog post</title>
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="primary-text">
+            <i class="fas fa-book-open"></i>edge</span
+          >
+          ledger
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="index.html#cases">cases</a></li>
+            <li><a href="index.html#blog">blog</a></li>
+            <li><a href="index.html#content">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>blog</h1>
+      </div>
+    </header>
+    <!-- end of header -->
+    <main>
+      <!-- about solution -->
+      <section class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./image_resources/blog/blog1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h4>blog post one</h4>
+                <p class="meta">
+                <i class="fas fa-user"></i>
+                posted by <strong>saman fayazi</strong>
+                22 january 2021
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                dolores illo provident, sed laudantium nihil fuga asperiores. Ab
+                necessitatibus autem ipsa inventore, maiores, accusamus neque
+                eligendi a libero, quos tenetur debitis impedit nesciunt
+                excepturi natus.
+              </p>
+              <a href="post.html" class="btn btn-b-p">
+                <i class="fas fa-chevron-right"></i> read more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blog -->
+      <section class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./image_resources/blog/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h4>blog post two</h4>
+                <p class="meta">
+                <i class="fas fa-user"></i>
+                posted by <strong>jane yun </strong>
+                22 january 2021
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                dolores illo provident, sed laudantium nihil fuga asperiores. Ab
+                necessitatibus autem ipsa inventore, maiores, accusamus neque
+                eligendi a libero, quos tenetur debitis impedit nesciunt
+                excepturi natus.
+              </p>
+              <a href="post.html" class="btn btn-b-p-2">
+                <i class="fas fa-chevron-right"></i> read more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blog -->
+      <section class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./image_resources/blog/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h4>blog post two</h4>
+                <p class="meta">
+                <i class="fas fa-user"></i>
+                posted by <strong>hossein valizadeh</strong>
+                22 january 2021
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                dolores illo provident, sed laudantium nihil fuga asperiores. Ab
+                necessitatibus autem ipsa inventore, maiores, accusamus neque
+                eligendi a libero, quos tenetur debitis impedit nesciunt
+                excepturi natus.
+              </p>
+              <a href="post.html" class="btn btn-b-p">
+                <i class="fas fa-chevron-right"></i> read more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </div>
+      <p>copyright &copy; 2021 - edge ledger.</p>
+    </footer>
+    <script>
+        const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

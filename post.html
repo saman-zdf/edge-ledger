@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>post one</title>
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="primary-text">
+            <i class="fas fa-book-open"></i>edge</span
+          >
+          ledger
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="index.html#cases">cases</a></li>
+            <li><a href="index.html#blog">blog</a></li>
+            <li><a href="index.html#content">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>blog</h1>
+      </div>
+    </header>
+    <!-- end of header -->
+    <main>
+      <section class="post">
+        <h2>post blog one</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i>
+          posted by <strong>jane yun </strong>
+          22 january 2021
+        </p>
+        <img src="./image_resources/blog/blog1.jpg" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          dolores illo provident, sed laudantium nihil fuga asperiores. Ab
+          necessitatibus autem ipsa inventore, maiores, accusamus neque
+          eligendi a libero, quos tenetur debitis impedit nesciunt
+          excepturi natus.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem blanditiis  ratione nisi sed, accusamus distinctio possimus facere animi labore quia quasi fugiat consequatur esse inventore perferendis, error iure quam unde repellat laudantium dolorum sit? Accusamus incidunt iusto fuga ex totam eum enim architecto temporibus quasi vitae optio impedit modi perspiciatis odio sit illo autem tempora ea, culpa magni non voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur, impedit numquam quidem asperiores libero minima earum explicabo sunt fugit sint? Soluta tempore repudiandae, rem officiis ab in explicabo quae corporis dolore aliquam eaque atque possimus molestiae, vero laboriosam delectus placeat sit distinctio, alias voluptas omnis! Minus cum fugit repellendus.</p>
+      </section>
+    </main>
+    <!-- footer -->
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </div>
+      <p>copyright &copy; 2021 - edge ledger.</p>
+    </footer>
+    <script>
+           const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
